@@ -24,4 +24,4 @@ artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: /home/shershah/angular/angular-realworld-example-app
+  base-directory: dist/src
