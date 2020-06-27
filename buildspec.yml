@@ -15,6 +15,7 @@ phases:
       - echo installing dependencies...
       - npm i -g @angular/cli
       - npm install
+      - sed -i "s|api_url:.*|api_url:'$Name'|g" src/environments/environment.prod.ts
   build:
     commands:
       # - echo testing...dubara......phirse
