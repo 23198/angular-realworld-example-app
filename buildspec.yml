@@ -12,7 +12,7 @@ phases:
       - apt install --no-install-recommends yarn
   pre_build:
     commands:
-      - echo installing dependencies...
+      - echo installing dependencies......
       - npm i -g @angular/cli
       - npm install
       - sed -i "s|api_url:.*|api_url:'http://$Name:3000'|g" src/environments/environment.prod.ts
