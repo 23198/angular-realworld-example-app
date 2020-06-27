@@ -21,8 +21,12 @@ phases:
       # - echo testing...dubara......phirse
       # - echo building...
       - ng build --prod
+      
+  post_build:
+    commands:
+      - rm -rf node_modules
 artifacts:
   files:
     - "**/*"
-  discard-paths: no
-  base-directory: dist
+  #discard-paths: no
+  #base-directory: dist
